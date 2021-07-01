@@ -1,4 +1,20 @@
 #!/bin/bash
+
+
+
+
+# THIS IS OBSOLETE package
+# please use this instead https://github.com/faktaoklimatu/utilities/tree/main/spellcheck
+
+
+
+
+
+
+
+
+
+
 #hnusně zbastlený rychloskript na nalezení nečeských (resp. neslovníkových dle `aspell`) slov na faktaoklimatu.cz
 #crysman (copyleft) 2020-2021
 #
@@ -7,6 +23,9 @@
 # - 2021-01-17a dump via elinks instead of lynx, addWord.sh added, search improved, colored output improved, local build support added
 # - 2021-01-17  some checking added, colored output, custom dictionary
 # - initial release
+
+echo "# THIS IS OBSOLETE package please use this instead https://github.com/faktaoklimatu/utilities/tree/main/spellcheck"
+exit 63
 
 #vars:  
 VERSION="2021-01-17a"
