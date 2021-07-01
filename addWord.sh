@@ -1,12 +1,16 @@
 #!/bin/bash
 #adds a new word to custom dictionary (and keeps it sorted)
 
+function usage {
+  echo "usage: `basename $0` <one_word_to_add>" >&2
+}
+
 DICT="FoKCustomDict.cs.pws"
 if test -n "$1"; then
   newWord="$1"
 else
   echo "ERR: a word to add missing..."
-  exit 2
+  usage && exit 2
 fi  
 
 if test -w "$DICT"; then

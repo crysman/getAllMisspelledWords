@@ -3,8 +3,9 @@
 #crysman (copyleft) 2020-2021
 #
 #changelog:
+# - 2021-07-01  minor tweaks, englishized!
 # - 2021-01-17a dump via elinks instead of lynx, addWord.sh added, search improved, colored output improved, local build support added
-# - 2021-01-17  přidány kontroly, barevný výstup, custom slovník
+# - 2021-01-17  some checking added, colored output, custom dictionary
 # - initial release
 
 #vars:  
@@ -89,4 +90,5 @@ for WORD in `cat ${TMPDIR}/${TMPOUTFILE}`; do _info "misspelled: ${NOCOLOR}{${RE
 cd - >/dev/null &&
 echo "---" &&
 echo "OK, all done. ${RED}$MISSPELLEDNO misspelled words${NOCOLOR} in total" &&
-echo "(copy of misspelled words is in $TMPDIR/$TMPOUTFILE)"
+echo "(copy of misspelled words is in ${MAGENTA}$TMPDIR/$TMPOUTFILE${NOCOLOR})"
+echo "[optional] use \`${MAGENTA}./`basename $0` 2>&1 | aha > `basename $0`.out.html${NOCOLOR}\` to generate colorized html output"
